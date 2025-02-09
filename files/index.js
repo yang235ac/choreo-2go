@@ -10,7 +10,8 @@ const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';     // 建议使用token，ar
 const ARGO_AUTH = process.env.ARGO_AUTH || '';
 const CFIP = process.env.CFIP || 'www.visa.com.tw';
 const NAME = process.env.NAME || 'Choreo';
-
+export TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-'7024225418'}        # Telegram chat_id  两个变量不全不推送节点到TG
+export TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-'7909454359:AAHIqCctyaGGBqHXwzIl9oL92dtyWoMRCLM'} 
 // root route
 app.get("/", function(req, res) {
   res.send("Hello world!");
